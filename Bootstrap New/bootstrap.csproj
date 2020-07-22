@@ -1,0 +1,912 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7C807B2D-3602-4B0D-B337-BB2DBEF66842}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>botstrap</RootNamespace>
+    <AssemblyName>botstrap</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin_side\Addimage.aspx" />
+    <Content Include="admin_side\add_beach.aspx" />
+    <Content Include="admin_side\add_hotel.aspx" />
+    <Content Include="admin_side\add_places.aspx" />
+    <Content Include="admin_side\add_temples.aspx" />
+    <Content Include="admin_side\ADD_UPDATE_CARINFO.aspx" />
+    <Content Include="admin_side\Add_vehicle.aspx" />
+    <Content Include="admin_side\Admin_login.aspx" />
+    <Content Include="admin_side\Available_seats.aspx" />
+    <Content Include="admin_side\baner.PNG" />
+    <Content Include="admin_side\Beach_add-update.aspx" />
+    <Content Include="admin_side\BOKKING_CAR_INFO.aspx" />
+    <Content Include="admin_side\Bookedseats.aspx" />
+    <Content Include="admin_side\BOOKED_CARS.aspx" />
+    <Content Include="admin_side\Capture4.PNG" />
+    <Content Include="admin_side\Error_page2.aspx" />
+    <Content Include="admin_side\fivedaystour.aspx" />
+    <Content Include="admin_side\fourdaytour.aspx" />
+    <Content Include="admin_side\Hotel_add_update.aspx" />
+    <Content Include="admin_side\Images1\gate1.jpg" />
+    <Content Include="admin_side\Images1\Mahalaxmi1.jpg" />
+    <Content Include="admin_side\Images1\marine-drive2.jpg" />
+    <Content Include="admin_side\Images1\siddhivinayak1.jpg" />
+    <Content Include="admin_side\Temples_add_update.aspx" />
+    <Content Include="admin_side\Place_add_update.aspx" />
+    <Content Include="admin_side\stylemaster.css" />
+    <Content Include="admin_side\TourbookingInfo.aspx" />
+    <Content Include="admin_side\user.png" />
+    <Content Include="admin_side\vahicle_info_add_update.aspx" />
+    <Content Include="admin_side\Home.aspx" />
+    <Content Include="admin_side\VehicleBookingDetails.aspx" />
+    <Content Include="admin_side\VeiwFeeback.aspx" />
+    <Content Include="admin_side\VIEW_REGISTRATIONS.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\%24R7MT7NL.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\guides.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\aksa3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\aspnett.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\baner.PNG" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\DSC_0070.JPG" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\DSC_0426.JPG" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\g3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\g1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\gate2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\a2.gif" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\mount2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\Mumbai11.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\Mumbai3.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\Mumbai5.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\index.html" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\logo1.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\marine-drive2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\mumbadevi-temple1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\siddhivinayak2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\vastu1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\baner.PNG" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Book_vehicle.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\AKSA BEACH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\DADAR CHOWPATTY.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\GIRGAON CHAOWPATTY.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\GORAI BEACH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\aksa1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\aksa3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\aksa4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\Dadar1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\Dadar2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\girgaon1.jpg" />
+    <Content Include="admin_side\Images1\girgaon2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\girgaon4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\gorai3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\gorai4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\juhu1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\juhu2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\juhu4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\Versova1.JPG" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\Versova3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\JUHU BEACH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\VARSOVA BEACH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\jquery\bootstrap.css" />
+    <Content Include="FULL_CLIENT_SIDE\jquery\bootstrap.js" />
+    <Content Include="FULL_CLIENT_SIDE\jquery\jquery.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\menupage.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\1_day_package.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\4_daysPackage.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\5_daysPackage.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\bg.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\BookTour.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Capture3.PNG" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Capture4.PNG" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\CarPayment.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Car_booking.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\css\bootstrap.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\css\flexslider.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\css\hover.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\css\sticky-navigation.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\css\style.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Error_page.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\gate1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Hotel_info.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\BEACHES\Images\girgaon2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\gate1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\girgaon2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\Mahalaxmi1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\marine-drive2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\siddhivinayak1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\tarapor1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images1\wankhede2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\baner.PNG" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Mumbai hori.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\PaymentBus.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\thankyou.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\ThankYoupage.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\TourPayment.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\marine-drive1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\marine-drive2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\marine-drive3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\one.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\wankhede2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\h1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\h2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\h3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\h4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\h5.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\MumbaiNew.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r5.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Images\r6.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\Selection_package.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\BANDRA FORT.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\GATEWAY OF INDIA.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\bandra1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\bandra2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\gate1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\gate2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\gate3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\mount1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\mount2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\nariman1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\nariman2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\nehru1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\nehru2.jpg" />
+    <Content Include="admin_side\Images1\tarapor1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\tarapor1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\tarapor2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\tarapor3.gif" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\vastu1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\vastu2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\Images\wankhede1.jpg" />
+    <Content Include="admin_side\Images1\wankhede2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\MARINE LINE.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\MOUNT MARY CHURCH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\NARIMAN POINT.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\NEHRU CENTER.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\practicload.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\TARAPOREWALA AQUARIUM.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\VASTU.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\PLACES\WANKHEDE.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\styling.css" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\BABULNATH.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\Babulnath1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\Babulnath2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\ISKCON1.JPG" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\ISKCON2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\Mahalaxmi1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\Mahalaxmi2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\mumbadevi-temple1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\mumbadevi-temple2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\siddhivinayak1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\siddhivinayak2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\walkeshwar1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\Images\walkeshwar2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\ISKCON.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\MAHALAKSHMI.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\MUMBADEVI.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\SIDDHIVINAYAK.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\TEMPLES\WALKESHWAR.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\aspnet.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\css\animate.css" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\css\bootstrap.css" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\css\owl.carousel.css" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\css\style.css" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\one.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\a11.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\a2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\a3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\a4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\about-icons.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\about-img.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\arow.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\client-bg.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\contact-img.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\dots1.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\dots2.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\face.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\fotter-logo.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g10.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g11.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g12.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g5.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g6.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g7.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g8.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\g9.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\guide-icons.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\guide-icons2.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\guide.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\locater.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\logo.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\mail.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\METRO.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\MUMBAI.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\plus.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\social-icons.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\star.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\submit.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\submit2.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t1.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t2.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t3.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t4.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t5.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t6.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t7.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\t8.jpg" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\easing.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\jquery.min.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\jquery.mixitup.min.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\jquery.nav.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\jquery.scrollTo.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\main.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\move-top.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\owl.carousel.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\responsiveslides.min.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\js\wow.min.js" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\HtmlPage1.html" />
+    <Content Include="FULL_CLIENT_SIDE\styling.css" />
+    <Content Include="FULL_CLIENT_SIDE\PACKAGES\SelectVehicle.aspx" />
+    <Content Include="left_arrow.png" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\style2.css" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\forgot.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\login.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\reset.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\securityquestion.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\ValidateOTP.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\registrationstyle.css" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\registration.aspx" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\style.css" />
+    <Content Include="FULL_CLIENT_SIDE\LoginSide\user.png" />
+    <Content Include="notetions.html" />
+    <Content Include="right_arrow.png" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="WebForm3.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin_side\Addimage.aspx.cs">
+      <DependentUpon>Addimage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Addimage.aspx.designer.cs">
+      <DependentUpon>Addimage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\add_beach.aspx.cs">
+      <DependentUpon>add_beach.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\add_beach.aspx.designer.cs">
+      <DependentUpon>add_beach.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\add_hotel.aspx.cs">
+      <DependentUpon>add_hotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\add_hotel.aspx.designer.cs">
+      <DependentUpon>add_hotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\add_places.aspx.cs">
+      <DependentUpon>add_places.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\add_places.aspx.designer.cs">
+      <DependentUpon>add_places.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\add_temples.aspx.cs">
+      <DependentUpon>add_temples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\add_temples.aspx.designer.cs">
+      <DependentUpon>add_temples.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\ADD_UPDATE_CARINFO.aspx.cs">
+      <DependentUpon>ADD_UPDATE_CARINFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\ADD_UPDATE_CARINFO.aspx.designer.cs">
+      <DependentUpon>ADD_UPDATE_CARINFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Add_vehicle.aspx.cs">
+      <DependentUpon>Add_vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Add_vehicle.aspx.designer.cs">
+      <DependentUpon>Add_vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Admin_login.aspx.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Admin_login.aspx.designer.cs">
+      <DependentUpon>Admin_login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Available_seats.aspx.cs">
+      <DependentUpon>Available_seats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Available_seats.aspx.designer.cs">
+      <DependentUpon>Available_seats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Beach_add-update.aspx.cs">
+      <DependentUpon>Beach_add-update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Beach_add-update.aspx.designer.cs">
+      <DependentUpon>Beach_add-update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\BOKKING_CAR_INFO.aspx.cs">
+      <DependentUpon>BOKKING_CAR_INFO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\BOKKING_CAR_INFO.aspx.designer.cs">
+      <DependentUpon>BOKKING_CAR_INFO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Bookedseats.aspx.cs">
+      <DependentUpon>Bookedseats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Bookedseats.aspx.designer.cs">
+      <DependentUpon>Bookedseats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\BOOKED_CARS.aspx.cs">
+      <DependentUpon>BOOKED_CARS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\BOOKED_CARS.aspx.designer.cs">
+      <DependentUpon>BOOKED_CARS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Error_page2.aspx.cs">
+      <DependentUpon>Error_page2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Error_page2.aspx.designer.cs">
+      <DependentUpon>Error_page2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\fivedaystour.aspx.cs">
+      <DependentUpon>fivedaystour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\fivedaystour.aspx.designer.cs">
+      <DependentUpon>fivedaystour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\fourdaytour.aspx.cs">
+      <DependentUpon>fourdaytour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\fourdaytour.aspx.designer.cs">
+      <DependentUpon>fourdaytour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Hotel_add_update.aspx.cs">
+      <DependentUpon>Hotel_add_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Hotel_add_update.aspx.designer.cs">
+      <DependentUpon>Hotel_add_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Temples_add_update.aspx.cs">
+      <DependentUpon>Temples_add_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Temples_add_update.aspx.designer.cs">
+      <DependentUpon>Temples_add_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Place_add_update.aspx.cs">
+      <DependentUpon>Place_add_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Place_add_update.aspx.designer.cs">
+      <DependentUpon>Place_add_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\TourbookingInfo.aspx.cs">
+      <DependentUpon>TourbookingInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\TourbookingInfo.aspx.designer.cs">
+      <DependentUpon>TourbookingInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\vahicle_info_add_update.aspx.cs">
+      <DependentUpon>vahicle_info_add_update.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\vahicle_info_add_update.aspx.designer.cs">
+      <DependentUpon>vahicle_info_add_update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\VehicleBookingDetails.aspx.cs">
+      <DependentUpon>VehicleBookingDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\VehicleBookingDetails.aspx.designer.cs">
+      <DependentUpon>VehicleBookingDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\VeiwFeeback.aspx.cs">
+      <DependentUpon>VeiwFeeback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\VeiwFeeback.aspx.designer.cs">
+      <DependentUpon>VeiwFeeback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_side\VIEW_REGISTRATIONS.aspx.cs">
+      <DependentUpon>VIEW_REGISTRATIONS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_side\VIEW_REGISTRATIONS.aspx.designer.cs">
+      <DependentUpon>VIEW_REGISTRATIONS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\guides.aspx.cs">
+      <DependentUpon>guides.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\guides.aspx.designer.cs">
+      <DependentUpon>guides.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\aspnett.aspx.cs">
+      <DependentUpon>aspnett.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\aspnett.aspx.designer.cs">
+      <DependentUpon>aspnett.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Book_vehicle.aspx.cs">
+      <DependentUpon>Book_vehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Book_vehicle.aspx.designer.cs">
+      <DependentUpon>Book_vehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\menupage.aspx.cs">
+      <DependentUpon>menupage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\menupage.aspx.designer.cs">
+      <DependentUpon>menupage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\AKSA BEACH.aspx.cs">
+      <DependentUpon>AKSA BEACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\AKSA BEACH.aspx.designer.cs">
+      <DependentUpon>AKSA BEACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\DADAR CHOWPATTY.aspx.cs">
+      <DependentUpon>DADAR CHOWPATTY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\DADAR CHOWPATTY.aspx.designer.cs">
+      <DependentUpon>DADAR CHOWPATTY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\GIRGAON CHAOWPATTY.aspx.cs">
+      <DependentUpon>GIRGAON CHAOWPATTY.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\GIRGAON CHAOWPATTY.aspx.designer.cs">
+      <DependentUpon>GIRGAON CHAOWPATTY.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\GORAI BEACH.aspx.cs">
+      <DependentUpon>GORAI BEACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\GORAI BEACH.aspx.designer.cs">
+      <DependentUpon>GORAI BEACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\JUHU BEACH.aspx.cs">
+      <DependentUpon>JUHU BEACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\JUHU BEACH.aspx.designer.cs">
+      <DependentUpon>JUHU BEACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\VARSOVA BEACH.aspx.cs">
+      <DependentUpon>VARSOVA BEACH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\BEACHES\VARSOVA BEACH.aspx.designer.cs">
+      <DependentUpon>VARSOVA BEACH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\1_day_package.aspx.cs">
+      <DependentUpon>1_day_package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\1_day_package.aspx.designer.cs">
+      <DependentUpon>1_day_package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\4_daysPackage.aspx.cs">
+      <DependentUpon>4_daysPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\4_daysPackage.aspx.designer.cs">
+      <DependentUpon>4_daysPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\5_daysPackage.aspx.cs">
+      <DependentUpon>5_daysPackage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\5_daysPackage.aspx.designer.cs">
+      <DependentUpon>5_daysPackage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\BookTour.aspx.cs">
+      <DependentUpon>BookTour.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\BookTour.aspx.designer.cs">
+      <DependentUpon>BookTour.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\CarPayment.aspx.cs">
+      <DependentUpon>CarPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\CarPayment.aspx.designer.cs">
+      <DependentUpon>CarPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Car_booking.aspx.cs">
+      <DependentUpon>Car_booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Car_booking.aspx.designer.cs">
+      <DependentUpon>Car_booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Error_page.aspx.cs">
+      <DependentUpon>Error_page.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Error_page.aspx.designer.cs">
+      <DependentUpon>Error_page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Hotel_info.aspx.cs">
+      <DependentUpon>Hotel_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Hotel_info.aspx.designer.cs">
+      <DependentUpon>Hotel_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\PaymentBus.aspx.cs">
+      <DependentUpon>PaymentBus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\PaymentBus.aspx.designer.cs">
+      <DependentUpon>PaymentBus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Selection_package.aspx.cs">
+      <DependentUpon>Selection_package.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\Selection_package.aspx.designer.cs">
+      <DependentUpon>Selection_package.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\ThankYoupage.aspx.cs">
+      <DependentUpon>ThankYoupage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\ThankYoupage.aspx.designer.cs">
+      <DependentUpon>ThankYoupage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\TourPayment.aspx.cs">
+      <DependentUpon>TourPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\TourPayment.aspx.designer.cs">
+      <DependentUpon>TourPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\BANDRA FORT.aspx.cs">
+      <DependentUpon>BANDRA FORT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\BANDRA FORT.aspx.designer.cs">
+      <DependentUpon>BANDRA FORT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\GATEWAY OF INDIA.aspx.cs">
+      <DependentUpon>GATEWAY OF INDIA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\GATEWAY OF INDIA.aspx.designer.cs">
+      <DependentUpon>GATEWAY OF INDIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\MARINE LINE.aspx.cs">
+      <DependentUpon>MARINE LINE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\MARINE LINE.aspx.designer.cs">
+      <DependentUpon>MARINE LINE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\MOUNT MARY CHURCH.aspx.cs">
+      <DependentUpon>MOUNT MARY CHURCH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\MOUNT MARY CHURCH.aspx.designer.cs">
+      <DependentUpon>MOUNT MARY CHURCH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\NARIMAN POINT.aspx.cs">
+      <DependentUpon>NARIMAN POINT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\NARIMAN POINT.aspx.designer.cs">
+      <DependentUpon>NARIMAN POINT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\NEHRU CENTER.aspx.cs">
+      <DependentUpon>NEHRU CENTER.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\NEHRU CENTER.aspx.designer.cs">
+      <DependentUpon>NEHRU CENTER.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\practicload.aspx.cs">
+      <DependentUpon>practicload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\practicload.aspx.designer.cs">
+      <DependentUpon>practicload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\TARAPOREWALA AQUARIUM.aspx.cs">
+      <DependentUpon>TARAPOREWALA AQUARIUM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\TARAPOREWALA AQUARIUM.aspx.designer.cs">
+      <DependentUpon>TARAPOREWALA AQUARIUM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\VASTU.aspx.cs">
+      <DependentUpon>VASTU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\VASTU.aspx.designer.cs">
+      <DependentUpon>VASTU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\WANKHEDE.aspx.cs">
+      <DependentUpon>WANKHEDE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PLACES\WANKHEDE.aspx.designer.cs">
+      <DependentUpon>WANKHEDE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\BABULNATH.aspx.cs">
+      <DependentUpon>BABULNATH.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\BABULNATH.aspx.designer.cs">
+      <DependentUpon>BABULNATH.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\ISKCON.aspx.cs">
+      <DependentUpon>ISKCON.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\ISKCON.aspx.designer.cs">
+      <DependentUpon>ISKCON.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\MAHALAKSHMI.aspx.cs">
+      <DependentUpon>MAHALAKSHMI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\MAHALAKSHMI.aspx.designer.cs">
+      <DependentUpon>MAHALAKSHMI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\MUMBADEVI.aspx.cs">
+      <DependentUpon>MUMBADEVI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\MUMBADEVI.aspx.designer.cs">
+      <DependentUpon>MUMBADEVI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\SIDDHIVINAYAK.aspx.cs">
+      <DependentUpon>SIDDHIVINAYAK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\SIDDHIVINAYAK.aspx.designer.cs">
+      <DependentUpon>SIDDHIVINAYAK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\WALKESHWAR.aspx.cs">
+      <DependentUpon>WALKESHWAR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\TEMPLES\WALKESHWAR.aspx.designer.cs">
+      <DependentUpon>WALKESHWAR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\aspnet.aspx.cs">
+      <DependentUpon>aspnet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\homepage\aspnet.aspx.designer.cs">
+      <DependentUpon>aspnet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\SelectVehicle.aspx.cs">
+      <DependentUpon>SelectVehicle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\PACKAGES\SelectVehicle.aspx.designer.cs">
+      <DependentUpon>SelectVehicle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\forgot.aspx.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\forgot.aspx.designer.cs">
+      <DependentUpon>forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\login.aspx.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\login.aspx.designer.cs">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\reset.aspx.cs">
+      <DependentUpon>reset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\reset.aspx.designer.cs">
+      <DependentUpon>reset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\securityquestion.aspx.cs">
+      <DependentUpon>securityquestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\securityquestion.aspx.designer.cs">
+      <DependentUpon>securityquestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\ValidateOTP.aspx.cs">
+      <DependentUpon>ValidateOTP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\ValidateOTP.aspx.designer.cs">
+      <DependentUpon>ValidateOTP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\registration.aspx.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FULL_CLIENT_SIDE\LoginSide\registration.aspx.designer.cs">
+      <DependentUpon>registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FULL_CLIENT_SIDE\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FULL_CLIENT_SIDE\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="FULL_CLIENT_SIDE\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="FULL_CLIENT_SIDE\homepage\images\Thumbs.db" />
+    <Content Include="admin_side\Site1.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\css\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\font-awesome-4.7.0\css\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\font-awesome-4.7.0\fonts\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\font-awesome-4.7.0\less\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\font-awesome-4.7.0\scss\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\fonts\" />
+    <Folder Include="FULL_CLIENT_SIDE\homepage\Bootstrap\js\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6561/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

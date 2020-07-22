@@ -1,0 +1,5 @@
+F:\vstudio\botstrap\bin\botstrap.dll
+F:\vstudio\botstrap\bin\botstrap.pdb
+F:\vstudio\botstrap\obj\Debug\botstrap.csprojResolveAssemblyReference.cache
+F:\vstudio\botstrap\obj\Debug\botstrap.dll
+F:\vstudio\botstrap\obj\Debug\botstrap.pdb
